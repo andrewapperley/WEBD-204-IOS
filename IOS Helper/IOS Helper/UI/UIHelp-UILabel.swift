@@ -12,7 +12,10 @@ class UIHelp_UILabel: HelperViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-      self.view.backgroundColor = UIColor.yellowColor()
+      self.title = "UILabel"
+      let label = UILabel()
+      label.text = "This is a Label. It's meant for a single line of text"
+      stack.addArrangedSubview(label)
     }
 
 }
