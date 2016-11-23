@@ -23,12 +23,9 @@ class UIHelp_UIAnimations: HelperViewController {
       height = animatingView.heightAnchor.constraintEqualToConstant(50)
       height!.priority = 800
       height!.active = true
-    }
 
-  override func viewDidAppear(animated: Bool) {
-    super.viewDidAppear(animated)
-    animate()
-  }
+      animate()
+    }
 
   func animate() {
     view.layoutIfNeeded()
