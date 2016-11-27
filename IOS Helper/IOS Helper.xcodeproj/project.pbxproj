@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F5B7C8C1DE64E2E0041014D /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5B7C8B1DE64E2E0041014D /* DataViewController.swift */; };
 		0F90EDBE1DE5245F0083E153 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F90EDBD1DE5245F0083E153 /* AppDelegate.swift */; };
 		0F90EDC71DE5245F0083E153 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F90EDC61DE5245F0083E153 /* Assets.xcassets */; };
 		0F90EDCA1DE5245F0083E153 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F90EDC81DE5245F0083E153 /* LaunchScreen.storyboard */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F5B7C8B1DE64E2E0041014D /* DataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataViewController.swift; path = "IOS Helper/DataViewController.swift"; sourceTree = SOURCE_ROOT; };
 		0F90EDBA1DE5245F0083E153 /* IOS Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F90EDBD1DE5245F0083E153 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F90EDC61DE5245F0083E153 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				0F90EDE11DE53C8F0083E153 /* UIHelp-UITextView.swift */,
 				0F90EDD41DE538D00083E153 /* UIHelp-UIView.swift */,
 				0F90EDD61DE53C040083E153 /* UIHelp-UIButton.swift */,
+				0F5B7C8B1DE64E2E0041014D /* DataViewController.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 				0F90EDED1DE53F070083E153 /* HelperViewController.swift in Sources */,
 				0F90EDEA1DE53C8F0083E153 /* UIHelp-UITextField.swift in Sources */,
 				0F90EDD71DE53C040083E153 /* UIHelp-UIButton.swift in Sources */,
+				0F5B7C8C1DE64E2E0041014D /* DataViewController.swift in Sources */,
 				0F90EDD21DE528EC0083E153 /* MainViewController.swift in Sources */,
 				0F90EDE41DE53C8F0083E153 /* UIHelp-UICollectionView.swift in Sources */,
 				0F90EDE61DE53C8F0083E153 /* UIHelp-UIKitDynamics.swift in Sources */,
@@ -334,6 +338,7 @@
 				0F90EDD01DE5245F0083E153 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

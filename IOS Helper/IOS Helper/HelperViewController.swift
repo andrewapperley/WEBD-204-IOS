@@ -8,14 +8,21 @@
 
 import UIKit
 
+protocol HelperDelegate {
+  func sendMessage(text: String, from indexPath: NSIndexPath)
+}
+
 class HelperViewController: UIViewController {
 
   var stack = UIStackView()
   var textView = UITextView()
+  internal var delegate: HelperDelegate?
+  var indexPath: NSIndexPath!
 
-  init(with text: String) {
+  init(with text: String, delegate: HelperDelegate?) {
     super.init(nibName: nil, bundle: nil)
     textView.text = text
+    self.delegate = delegate
   }
   
   required init?(coder aDecoder: NSCoder) {
@@ -36,6 +43,16 @@ class HelperViewController: UIViewController {
     stack.translatesAutoresizingMaskIntoConstraints = false
     textView.translatesAutoresizingMaskIntoConstraints = false
     stack.addArrangedSubview(textView)
+  }
+
+  func update(indexPath: NSIndexPath) {
+    self.indexPath = nil
+    self.indexPath = indexPath
+  }
+
+  deinit {
+    self.indexPath = nil
+    self.delegate = nil
   }
 
 }
