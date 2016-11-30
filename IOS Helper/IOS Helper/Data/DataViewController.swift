@@ -10,9 +10,10 @@ import UIKit
 
 class DataViewController: HelperViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    self.title = "Data and Delegates"
+  }
 
   override func viewWillDisappear(animated: Bool) {
     super.viewWillDisappear(animated)

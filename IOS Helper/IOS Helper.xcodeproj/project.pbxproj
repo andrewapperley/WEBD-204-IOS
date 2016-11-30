@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0F5B7C8C1DE64E2E0041014D /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5B7C8B1DE64E2E0041014D /* DataViewController.swift */; };
+		0F855C261DEF25EF00B05BD6 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F855C251DEF25EF00B05BD6 /* DataViewController.swift */; };
+		0F855C281DEF262700B05BD6 /* AdvancedHelp-Sharing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F855C271DEF262700B05BD6 /* AdvancedHelp-Sharing.swift */; };
+		0F855C2A1DEF26E600B05BD6 /* AdvancedHelp-PhotoLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F855C291DEF26E600B05BD6 /* AdvancedHelp-PhotoLibrary.swift */; };
+		0F855C2C1DEF271000B05BD6 /* AdvancedHelp-MoviePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F855C2B1DEF271000B05BD6 /* AdvancedHelp-MoviePlayer.swift */; };
+		0F855C2E1DEF272400B05BD6 /* AdvancedHelp-AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F855C2D1DEF272400B05BD6 /* AdvancedHelp-AudioPlayer.swift */; };
+		0F855C301DEF281300B05BD6 /* UIHelp-UIWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F855C2F1DEF281300B05BD6 /* UIHelp-UIWebView.swift */; };
+		0F855C331DEF2A8600B05BD6 /* ThirdPartyHelp-SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F855C321DEF2A8600B05BD6 /* ThirdPartyHelp-SnapKit.swift */; };
 		0F90EDBE1DE5245F0083E153 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F90EDBD1DE5245F0083E153 /* AppDelegate.swift */; };
 		0F90EDC71DE5245F0083E153 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F90EDC61DE5245F0083E153 /* Assets.xcassets */; };
 		0F90EDCA1DE5245F0083E153 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F90EDC81DE5245F0083E153 /* LaunchScreen.storyboard */; };
@@ -28,7 +34,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0F5B7C8B1DE64E2E0041014D /* DataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataViewController.swift; path = "IOS Helper/DataViewController.swift"; sourceTree = SOURCE_ROOT; };
+		0F855C251DEF25EF00B05BD6 /* DataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
+		0F855C271DEF262700B05BD6 /* AdvancedHelp-Sharing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AdvancedHelp-Sharing.swift"; sourceTree = "<group>"; };
+		0F855C291DEF26E600B05BD6 /* AdvancedHelp-PhotoLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AdvancedHelp-PhotoLibrary.swift"; sourceTree = "<group>"; };
+		0F855C2B1DEF271000B05BD6 /* AdvancedHelp-MoviePlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AdvancedHelp-MoviePlayer.swift"; sourceTree = "<group>"; };
+		0F855C2D1DEF272400B05BD6 /* AdvancedHelp-AudioPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AdvancedHelp-AudioPlayer.swift"; sourceTree = "<group>"; };
+		0F855C2F1DEF281300B05BD6 /* UIHelp-UIWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIHelp-UIWebView.swift"; sourceTree = "<group>"; };
+		0F855C321DEF2A8600B05BD6 /* ThirdPartyHelp-SnapKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ThirdPartyHelp-SnapKit.swift"; sourceTree = "<group>"; };
 		0F90EDBA1DE5245F0083E153 /* IOS Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F90EDBD1DE5245F0083E153 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F90EDC61DE5245F0083E153 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -61,6 +73,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F855C231DEF25EF00B05BD6 /* Advanced */ = {
+			isa = PBXGroup;
+			children = (
+				0F855C271DEF262700B05BD6 /* AdvancedHelp-Sharing.swift */,
+				0F855C291DEF26E600B05BD6 /* AdvancedHelp-PhotoLibrary.swift */,
+				0F855C2B1DEF271000B05BD6 /* AdvancedHelp-MoviePlayer.swift */,
+				0F855C2D1DEF272400B05BD6 /* AdvancedHelp-AudioPlayer.swift */,
+			);
+			name = Advanced;
+			path = "IOS Helper/Advanced";
+			sourceTree = SOURCE_ROOT;
+		};
+		0F855C241DEF25EF00B05BD6 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0F855C251DEF25EF00B05BD6 /* DataViewController.swift */,
+			);
+			name = Data;
+			path = "IOS Helper/Data";
+			sourceTree = SOURCE_ROOT;
+		};
+		0F855C311DEF2A7200B05BD6 /* Third Party */ = {
+			isa = PBXGroup;
+			children = (
+				0F855C321DEF2A8600B05BD6 /* ThirdPartyHelp-SnapKit.swift */,
+			);
+			path = "Third Party";
+			sourceTree = "<group>";
+		};
 		0F90EDB11DE5245E0083E153 = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +121,9 @@
 		0F90EDBC1DE5245F0083E153 /* IOS Helper */ = {
 			isa = PBXGroup;
 			children = (
+				0F855C311DEF2A7200B05BD6 /* Third Party */,
+				0F855C231DEF25EF00B05BD6 /* Advanced */,
+				0F855C241DEF25EF00B05BD6 /* Data */,
 				0F90EDD31DE5384C0083E153 /* UI */,
 				0F90EDBD1DE5245F0083E153 /* AppDelegate.swift */,
 				0F90EDC61DE5245F0083E153 /* Assets.xcassets */,
@@ -106,7 +150,7 @@
 				0F90EDE11DE53C8F0083E153 /* UIHelp-UITextView.swift */,
 				0F90EDD41DE538D00083E153 /* UIHelp-UIView.swift */,
 				0F90EDD61DE53C040083E153 /* UIHelp-UIButton.swift */,
-				0F5B7C8B1DE64E2E0041014D /* DataViewController.swift */,
+				0F855C2F1DEF281300B05BD6 /* UIHelp-UIWebView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -184,16 +228,22 @@
 				0F90EDEB1DE53C8F0083E153 /* UIHelp-UITextView.swift in Sources */,
 				0F90EDE21DE53C8F0083E153 /* UIHelp-UIAlert.swift in Sources */,
 				0F90EDE81DE53C8F0083E153 /* UIHelp-UISlider.swift in Sources */,
+				0F855C301DEF281300B05BD6 /* UIHelp-UIWebView.swift in Sources */,
 				0F90EDE31DE53C8F0083E153 /* UIHelp-UIAnimations.swift in Sources */,
+				0F855C2E1DEF272400B05BD6 /* AdvancedHelp-AudioPlayer.swift in Sources */,
 				0F90EDD51DE538D00083E153 /* UIHelp-UIView.swift in Sources */,
+				0F855C2C1DEF271000B05BD6 /* AdvancedHelp-MoviePlayer.swift in Sources */,
+				0F855C331DEF2A8600B05BD6 /* ThirdPartyHelp-SnapKit.swift in Sources */,
+				0F855C2A1DEF26E600B05BD6 /* AdvancedHelp-PhotoLibrary.swift in Sources */,
 				0F90EDE91DE53C8F0083E153 /* UIHelp-UISwitch.swift in Sources */,
 				0F90EDE51DE53C8F0083E153 /* UIHelp-UIImageView.swift in Sources */,
 				0F90EDBE1DE5245F0083E153 /* AppDelegate.swift in Sources */,
 				0F90EDE71DE53C8F0083E153 /* UIHelp-UILabel.swift in Sources */,
 				0F90EDED1DE53F070083E153 /* HelperViewController.swift in Sources */,
 				0F90EDEA1DE53C8F0083E153 /* UIHelp-UITextField.swift in Sources */,
+				0F855C261DEF25EF00B05BD6 /* DataViewController.swift in Sources */,
 				0F90EDD71DE53C040083E153 /* UIHelp-UIButton.swift in Sources */,
-				0F5B7C8C1DE64E2E0041014D /* DataViewController.swift in Sources */,
+				0F855C281DEF262700B05BD6 /* AdvancedHelp-Sharing.swift in Sources */,
 				0F90EDD21DE528EC0083E153 /* MainViewController.swift in Sources */,
 				0F90EDE41DE53C8F0083E153 /* UIHelp-UICollectionView.swift in Sources */,
 				0F90EDE61DE53C8F0083E153 /* UIHelp-UIKitDynamics.swift in Sources */,

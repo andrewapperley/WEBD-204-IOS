@@ -12,7 +12,7 @@ class UIHelp_UITextView: HelperViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-      self.view.backgroundColor = UIColor.yellowColor()
+      self.title = "UITextView"
     }
 
 }

@@ -43,10 +43,20 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         Element(title: "UICollectionView", viewController: UIHelp_UICollectionView(with: "UICollectionView's are used to display data in a non-linear fashion. The main difference between it and an UITableView is that it can scroll both vertical and horizontal. Other difference includes the use of a Layout object that defines how the Cells will be laid out and that it doesn't inherently handle headers or footers.", delegate: self)),
         Element(title: "UISlider", viewController: UIHelp_UISlider(with: "UISlider's are controls that allow the user to provide a value within two values. For instance if they wanted to change the volume of a song or skip ahead while watching a movie. You can edit the min/max values as well as the image that is used for the dragging part, or better known as the Thumb Image.", delegate: self)),
         Element(title: "UIAnimations", viewController: UIHelp_UIAnimations(with: "UIViewAnimation's are the easiest and most straightforward, yet powerful, ways to animate a component on iOS. You're able to animate position, size, colour, rotation, and constraints.", delegate: self)),
-        Element(title: "UIKitDynamics", viewController: UIHelp_UIKitDynamics(with: "There is so much you can do with UIKit Dynamics. It's the built in physics/particle engine where you can manipulate UIView based components in a whole new way by adding gravity, collision detectors, desity, and more.", delegate: self))
+        Element(title: "UIKitDynamics", viewController: UIHelp_UIKitDynamics(with: "There is so much you can do with UIKit Dynamics. It's the built in physics/particle engine where you can manipulate UIView based components in a whole new way by adding gravity, collision detectors, desity, and more.", delegate: self)),
+        Element(title: "UIWebView", viewController: UIHelp_UIWebView(with: "Not Done", delegate: self))
           ]),
       Section(title: "Data", elements: [
         Element(title: "Delegates and Data", viewController: DataViewController(with: "This component demonstrates the use of a Delegate. By utilizing the delegate pattern we are able to call a function on an Object that we know nothing about, other than that it has a function called sendMessage that accepts a String and NSIndexPath.", delegate: self))
+        ]),
+      Section(title: "Advanced", elements: [
+        Element(title: "Sharing", viewController: AdvancedHelp_Sharing(with: "Not Done", delegate: self)),
+        Element(title: "Photo Library", viewController: AdvancedHelp_PhotoLibrary(with: "Not Done", delegate: self)),
+        Element(title: "Movie Player", viewController: AdvancedHelp_MoviePlayer(with: "Not Done", delegate: self)),
+        Element(title: "Audio Player", viewController: AdvancedHelp_AudioPlayer(with: "Not Done", delegate: self))
+        ]),
+      Section(title: "Third Party Components", elements: [
+        Element(title: "SnapKit (Auto Layout)", viewController: ThirdPartyHelp_SnapKit(with: "Not Done", delegate: self))
         ])
         ]
     tableview = UITableView()
