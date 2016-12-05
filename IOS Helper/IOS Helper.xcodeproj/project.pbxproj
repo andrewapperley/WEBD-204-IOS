@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F3CBCA91DF4ED9400F6701B /* bunny.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0F3CBCA81DF4ED9400F6701B /* bunny.mp4 */; };
 		0F43436A1DF0839700094C1F /* mpthreetest.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0F4343691DF0839700094C1F /* mpthreetest.mp3 */; };
 		0F43436E1DF084BA00094C1F /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F43436B1DF084BA00094C1F /* CoreMedia.framework */; };
 		0F43436F1DF084BA00094C1F /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F43436C1DF084BA00094C1F /* MediaPlayer.framework */; };
@@ -39,6 +40,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F3CBCA81DF4ED9400F6701B /* bunny.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = bunny.mp4; sourceTree = "<group>"; };
 		0F4343691DF0839700094C1F /* mpthreetest.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mpthreetest.mp3; sourceTree = "<group>"; };
 		0F43436B1DF084BA00094C1F /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		0F43436C1DF084BA00094C1F /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
@@ -139,6 +141,7 @@
 		0F90EDBC1DE5245F0083E153 /* IOS Helper */ = {
 			isa = PBXGroup;
 			children = (
+				0F3CBCA81DF4ED9400F6701B /* bunny.mp4 */,
 				0F4343691DF0839700094C1F /* mpthreetest.mp3 */,
 				0F855C311DEF2A7200B05BD6 /* Third Party */,
 				0F855C231DEF25EF00B05BD6 /* Advanced */,
@@ -255,6 +258,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F3CBCA91DF4ED9400F6701B /* bunny.mp4 in Resources */,
 				0F43436A1DF0839700094C1F /* mpthreetest.mp3 in Resources */,
 				0F90EDCA1DE5245F0083E153 /* LaunchScreen.storyboard in Resources */,
 				0F90EDC71DE5245F0083E153 /* Assets.xcassets in Resources */,
