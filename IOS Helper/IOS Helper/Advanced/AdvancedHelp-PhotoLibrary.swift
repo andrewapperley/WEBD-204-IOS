@@ -8,28 +8,41 @@
 
 import UIKit
 
-class AdvancedHelp_PhotoLibrary: HelperViewController {
+class AdvancedHelp_PhotoLibrary: HelperViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+  var photos: UIImagePickerController!
+  let photo = UIImageView()
 
-        // Do any additional setup after loading the view.
-    }
+  override func viewDidLoad() {
+    super.viewDidLoad()
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
+    self.title = "Photo Library"
 
-    /*
-    // MARK: - Navigation
+    stack.addArrangedSubview(photo)
+    photo.contentMode = .ScaleAspectFit
+    photo.translatesAutoresizingMaskIntoConstraints = false
+    photo.heightAnchor.constraintEqualToConstant(100).active = true
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    photos = UIImagePickerController()
+    photos.delegate = self
+
+    let showButton = UIButton(type: .System)
+    showButton.addTarget(self, action: #selector(showPhotos), forControlEvents: .TouchUpInside)
+    showButton.setTitle("Show Photos", forState: .Normal)
+    stack.addArrangedSubview(showButton)
+
+    showButton.translatesAutoresizingMaskIntoConstraints = false
+    showButton.heightAnchor.constraintEqualToConstant(44).active = true
+    showButton.centerXAnchor.constraintEqualToAnchor(stack.centerXAnchor).active = true
+  }
+
+  @objc private func showPhotos() {
+    self.presentViewController(photos, animated: true, completion: nil)
+  }
+
+  func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
+    photo.image = image
+    picker.dismissViewControllerAnimated(true, completion: nil)
+  }
 
 }
