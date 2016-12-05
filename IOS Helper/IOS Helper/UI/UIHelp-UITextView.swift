@@ -13,6 +13,12 @@ class UIHelp_UITextView: HelperViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
       self.title = "UITextView"
+
+      let textView = UITextView()
+      textView.text = "This text can be \nplaced on \nmultiple \nlines"
+      stack.addArrangedSubview(textView)
+
+      textView.heightAnchor.constraintEqualToConstant(100).active = true
     }
 
 }

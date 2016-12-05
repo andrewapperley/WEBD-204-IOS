@@ -12,7 +12,14 @@ class UIHelp_UITextField: HelperViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-      self.view.backgroundColor = UIColor.yellowColor()
+      self.title = "UITextField"
+
+      let textField = UITextField()
+      textField.placeholder = "Placeholder Text"
+
+      stack.addArrangedSubview(textField)
+
+      textField.heightAnchor.constraintEqualToConstant(50).active = true
     }
 
 }
