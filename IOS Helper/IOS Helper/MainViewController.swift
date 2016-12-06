@@ -38,25 +38,26 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         Element(title: "UILabel", viewController: UIHelp_UILabel(with: "UILabel's are used as Titles or Labels for other UI components, such as a Text Input. Similar to the web world where Labels indicate what an Input Field is for the iOS world uses the same concept. UILabel's can be used for other purposes but most of the time indicate what something else is or what to do in a certain situation.", delegate: self)),
         Element(title: "UIAlert", viewController: UIHelp_UIAlert(with: "An UIAlertView can be used to communicate with the user that an action needs to be done or that something went wrong. Common usecases are when the user is logging out or a network request failed and the user has the option to retry.", delegate: self)),
         Element(title: "UIImageView", viewController: UIHelp_UIImageView(with: "An UIImageView is used to display an image on screen. The image can be from the network or local to the application. To display a network image the data must first be downloaded. The image can also be a set of frames that make up an animated Image.", delegate: self)),
-        Element(title: "UITextView", viewController: UIHelp_UITextView(with: "Not Done", delegate: self)),
-        Element(title: "UITextField", viewController: UIHelp_UITextField(with: "Not Done", delegate: self)),
+        Element(title: "UITextField", viewController: UIHelp_UITextField(with: "The UITextField is the way for users to input text, usually as part of a form (ie. Sign up or Sign in forms). There can be placeholder text to let the user know what is expected to be entered.", delegate: self)),
+        Element(title: "UITextView", viewController: UIHelp_UITextView(with: "Similar to the UITextField, this component allows the user to input text but the major difference is that the UITextView supports multiple lines of text.", delegate: self)),
         Element(title: "UICollectionView", viewController: UIHelp_UICollectionView(with: "UICollectionView's are used to display data in a non-linear fashion. The main difference between it and an UITableView is that it can scroll both vertical and horizontal. Other difference includes the use of a Layout object that defines how the Cells will be laid out and that it doesn't inherently handle headers or footers.", delegate: self)),
         Element(title: "UISlider", viewController: UIHelp_UISlider(with: "UISlider's are controls that allow the user to provide a value within two values. For instance if they wanted to change the volume of a song or skip ahead while watching a movie. You can edit the min/max values as well as the image that is used for the dragging part, or better known as the Thumb Image.", delegate: self)),
         Element(title: "UIAnimations", viewController: UIHelp_UIAnimations(with: "UIViewAnimation's are the easiest and most straightforward, yet powerful, ways to animate a component on iOS. You're able to animate position, size, colour, rotation, and constraints.", delegate: self)),
         Element(title: "UIKitDynamics", viewController: UIHelp_UIKitDynamics(with: "There is so much you can do with UIKit Dynamics. It's the built in physics/particle engine where you can manipulate UIView based components in a whole new way by adding gravity, collision detectors, desity, and more.", delegate: self)),
-        Element(title: "UIWebView", viewController: UIHelp_UIWebView(with: "Not Done", delegate: self))
+        Element(title: "UIWebView", viewController: UIHelp_UIWebView(with: "UIWebView's are the way to get the web inside your app. The most common usecases for webviews are contact forms, external links (to keep the user in the app), and Web Apps. Another less common usecase is to display content within dynamic HTML, (ie. Charts).", delegate: self))
           ]),
       Section(title: "Data", elements: [
         Element(title: "Delegates and Data", viewController: DataViewController(with: "This component demonstrates the use of a Delegate. By utilizing the delegate pattern we are able to call a function on an Object that we know nothing about, other than that it has a function called sendMessage that accepts a String and NSIndexPath.", delegate: self))
         ]),
       Section(title: "Advanced", elements: [
         Element(title: "Sharing", viewController: AdvancedHelp_Sharing(with: "Not Done", delegate: self)),
-        Element(title: "Photo Library", viewController: AdvancedHelp_PhotoLibrary(with: "Not Done", delegate: self)),
-        Element(title: "Movie Player", viewController: AdvancedHelp_MoviePlayer(with: "Not Done", delegate: self)),
-        Element(title: "Audio Player", viewController: AdvancedHelp_AudioPlayer(with: "Not Done", delegate: self))
+        Element(title: "Photo Library", viewController: AdvancedHelp_PhotoLibrary(with: "This component demonstrates how to display the users photo library, even the iCloud images and let them pick one. Usually used for Profile Image selection or Attaching an image to a message. Once the user select an image you can manipulate it or use it directly.", delegate: self)),
+        Element(title: "Movie/Audio Player", viewController: AdvancedHelp_MoviePlayer(with: "Similar to AVAudioPlayer, this component plays audio files but provides you with a full screen UI experience out of the box. It also plays Movie files, which is primarily it's usecase.", delegate: self)),
+        Element(title: "Video Player", viewController: AdvancedHelp_VideoPlayer(with: "To play video files within custom UI the AVPlayer is your best option. It lets you hook into duration, play, pause, stop, and progress events of the current video file but leaves setting up the UI to you.", delegate: self)),
+        Element(title: "Audio Player", viewController: AdvancedHelp_AudioPlayer(with: "To play audio files within custom UI the AVAudioPlayer is your best option. It lets you hook into duration, play, pause, stop, and progress events of the current audio file but leaves setting up the UI to you.", delegate: self))
         ]),
       Section(title: "Third Party Components", elements: [
-        Element(title: "SnapKit (Auto Layout)", viewController: ThirdPartyHelp_SnapKit(with: "Not Done", delegate: self))
+        Element(title: "SnapKit (Auto Layout)", viewController: ThirdPartyHelp_SnapKit(with: "This component shows the power of SnapKit, a wrapper for Auto Layout. It mixes the power of Auto Layout and letting you construct your constraints in plain English, while taking the heavy lifting away from you.", delegate: self))
         ])
         ]
     tableview = UITableView()

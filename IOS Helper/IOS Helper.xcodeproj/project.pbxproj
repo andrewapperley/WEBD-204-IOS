@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F1B0F251DF6FE690074C5ED /* AdvancedHelp_VideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1B0F241DF6FE690074C5ED /* AdvancedHelp_VideoPlayer.swift */; };
 		0F3CBCA91DF4ED9400F6701B /* bunny.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0F3CBCA81DF4ED9400F6701B /* bunny.mp4 */; };
 		0F43436A1DF0839700094C1F /* mpthreetest.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0F4343691DF0839700094C1F /* mpthreetest.mp3 */; };
 		0F43436E1DF084BA00094C1F /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F43436B1DF084BA00094C1F /* CoreMedia.framework */; };
@@ -40,6 +41,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F1B0F241DF6FE690074C5ED /* AdvancedHelp_VideoPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvancedHelp_VideoPlayer.swift; sourceTree = "<group>"; };
 		0F3CBCA81DF4ED9400F6701B /* bunny.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = bunny.mp4; sourceTree = "<group>"; };
 		0F4343691DF0839700094C1F /* mpthreetest.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mpthreetest.mp3; sourceTree = "<group>"; };
 		0F43436B1DF084BA00094C1F /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
@@ -98,6 +100,7 @@
 				0F855C291DEF26E600B05BD6 /* AdvancedHelp-PhotoLibrary.swift */,
 				0F855C2B1DEF271000B05BD6 /* AdvancedHelp-MoviePlayer.swift */,
 				0F855C2D1DEF272400B05BD6 /* AdvancedHelp-AudioPlayer.swift */,
+				0F1B0F241DF6FE690074C5ED /* AdvancedHelp_VideoPlayer.swift */,
 			);
 			name = Advanced;
 			path = "IOS Helper/Advanced";
@@ -338,6 +341,7 @@
 				0F90EDEA1DE53C8F0083E153 /* UIHelp-UITextField.swift in Sources */,
 				0F855C261DEF25EF00B05BD6 /* DataViewController.swift in Sources */,
 				0F90EDD71DE53C040083E153 /* UIHelp-UIButton.swift in Sources */,
+				0F1B0F251DF6FE690074C5ED /* AdvancedHelp_VideoPlayer.swift in Sources */,
 				0F855C281DEF262700B05BD6 /* AdvancedHelp-Sharing.swift in Sources */,
 				0F90EDD21DE528EC0083E153 /* MainViewController.swift in Sources */,
 				0F90EDE41DE53C8F0083E153 /* UIHelp-UICollectionView.swift in Sources */,
