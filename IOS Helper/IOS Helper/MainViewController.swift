@@ -15,7 +15,7 @@ struct Section {
 
 struct Element {
   var title: String
-  var viewController: HelperViewController
+  var viewController: UIViewController
 }
 
 class MainViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, HelperDelegate {
@@ -44,7 +44,8 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         Element(title: "UISlider", viewController: UIHelp_UISlider(with: "UISlider's are controls that allow the user to provide a value within two values. For instance if they wanted to change the volume of a song or skip ahead while watching a movie. You can edit the min/max values as well as the image that is used for the dragging part, or better known as the Thumb Image.", delegate: self)),
         Element(title: "UIAnimations", viewController: UIHelp_UIAnimations(with: "UIViewAnimation's are the easiest and most straightforward, yet powerful, ways to animate a component on iOS. You're able to animate position, size, colour, rotation, and constraints.", delegate: self)),
         Element(title: "UIKitDynamics", viewController: UIHelp_UIKitDynamics(with: "There is so much you can do with UIKit Dynamics. It's the built in physics/particle engine where you can manipulate UIView based components in a whole new way by adding gravity, collision detectors, desity, and more.", delegate: self)),
-        Element(title: "UIWebView", viewController: UIHelp_UIWebView(with: "UIWebView's are the way to get the web inside your app. The most common usecases for webviews are contact forms, external links (to keep the user in the app), and Web Apps. Another less common usecase is to display content within dynamic HTML, (ie. Charts).", delegate: self))
+        Element(title: "UIWebView", viewController: UIHelp_UIWebView(with: "UIWebView's are the way to get the web inside your app. The most common usecases for webviews are contact forms, external links (to keep the user in the app), and Web Apps. Another less common usecase is to display content within dynamic HTML, (ie. Charts).", delegate: self)),
+        Element(title: "UITabbarController", viewController: UIHelp_TabBarViewController())
           ]),
       Section(title: "Data", elements: [
         Element(title: "Delegates and Data", viewController: DataViewController(with: "This component demonstrates the use of a Delegate. By utilizing the delegate pattern we are able to call a function on an Object that we know nothing about, other than that it has a function called sendMessage that accepts a String and NSIndexPath.", delegate: self))
@@ -53,7 +54,7 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         Element(title: "Sharing", viewController: AdvancedHelp_Sharing(with: "Not Done", delegate: self)),
         Element(title: "Photo Library", viewController: AdvancedHelp_PhotoLibrary(with: "This component demonstrates how to display the users photo library, even the iCloud images and let them pick one. Usually used for Profile Image selection or Attaching an image to a message. Once the user select an image you can manipulate it or use it directly.", delegate: self)),
         Element(title: "Movie/Audio Player", viewController: AdvancedHelp_MoviePlayer(with: "Similar to AVAudioPlayer, this component plays audio files but provides you with a full screen UI experience out of the box. It also plays Movie files, which is primarily it's usecase.", delegate: self)),
-        Element(title: "Video Player", viewController: AdvancedHelp_VideoPlayer(with: "To play video files within custom UI the AVPlayer is your best option. It lets you hook into duration, play, pause, stop, and progress events of the current video file but leaves setting up the UI to you.", delegate: self)),
+//        Element(title: "Video Player", viewController: AdvancedHelp_VideoPlayer(with: "To play video files within custom UI the AVPlayer is your best option. It lets you hook into duration, play, pause, stop, and progress events of the current video file but leaves setting up the UI to you.", delegate: self)),
         Element(title: "Audio Player", viewController: AdvancedHelp_AudioPlayer(with: "To play audio files within custom UI the AVAudioPlayer is your best option. It lets you hook into duration, play, pause, stop, and progress events of the current audio file but leaves setting up the UI to you.", delegate: self))
         ]),
       Section(title: "Third Party Components", elements: [
@@ -95,7 +96,10 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
   func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
 
     let viewController = data[indexPath.section].elements[indexPath.row].viewController
-    viewController.update(indexPath)
+    if viewController is HelperViewController {
+      let helperController = viewController as! HelperViewController
+      helperController.update(indexPath)
+    }
     self.navigationController?.pushViewController(viewController, animated: true)
   }
 

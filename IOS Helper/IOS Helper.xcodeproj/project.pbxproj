@@ -37,6 +37,7 @@
 		0F90EDEA1DE53C8F0083E153 /* UIHelp-UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F90EDE01DE53C8F0083E153 /* UIHelp-UITextField.swift */; };
 		0F90EDEB1DE53C8F0083E153 /* UIHelp-UITextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F90EDE11DE53C8F0083E153 /* UIHelp-UITextView.swift */; };
 		0F90EDED1DE53F070083E153 /* HelperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F90EDEC1DE53F070083E153 /* HelperViewController.swift */; };
+		0FFFB6141DF89CD500973080 /* UIHelp-TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFFB6131DF89CD500973080 /* UIHelp-TabBarViewController.swift */; };
 		545BEFE342219C793298CEF6 /* Pods_IOS_Helper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EF27C9D4217C5AFA1253599 /* Pods_IOS_Helper.framework */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +74,7 @@
 		0F90EDE01DE53C8F0083E153 /* UIHelp-UITextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIHelp-UITextField.swift"; sourceTree = "<group>"; };
 		0F90EDE11DE53C8F0083E153 /* UIHelp-UITextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIHelp-UITextView.swift"; sourceTree = "<group>"; };
 		0F90EDEC1DE53F070083E153 /* HelperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperViewController.swift; sourceTree = "<group>"; };
+		0FFFB6131DF89CD500973080 /* UIHelp-TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIHelp-TabBarViewController.swift"; sourceTree = "<group>"; };
 		53B2E5D59C5867C1C3B282D3 /* Pods-IOS Helper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS Helper.release.xcconfig"; path = "Pods/Target Support Files/Pods-IOS Helper/Pods-IOS Helper.release.xcconfig"; sourceTree = "<group>"; };
 		6EF27C9D4217C5AFA1253599 /* Pods_IOS_Helper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOS_Helper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3B06EF4E7468762B15EEDF0 /* Pods-IOS Helper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS Helper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IOS Helper/Pods-IOS Helper.debug.xcconfig"; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 				0F90EDD41DE538D00083E153 /* UIHelp-UIView.swift */,
 				0F90EDD61DE53C040083E153 /* UIHelp-UIButton.swift */,
 				0F855C2F1DEF281300B05BD6 /* UIHelp-UIWebView.swift */,
+				0FFFB6131DF89CD500973080 /* UIHelp-TabBarViewController.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 				0F90EDD51DE538D00083E153 /* UIHelp-UIView.swift in Sources */,
 				0F855C2C1DEF271000B05BD6 /* AdvancedHelp-MoviePlayer.swift in Sources */,
 				0F855C331DEF2A8600B05BD6 /* ThirdPartyHelp-SnapKit.swift in Sources */,
+				0FFFB6141DF89CD500973080 /* UIHelp-TabBarViewController.swift in Sources */,
 				0F855C2A1DEF26E600B05BD6 /* AdvancedHelp-PhotoLibrary.swift in Sources */,
 				0F90EDE91DE53C8F0083E153 /* UIHelp-UISwitch.swift in Sources */,
 				0F90EDE51DE53C8F0083E153 /* UIHelp-UIImageView.swift in Sources */,
